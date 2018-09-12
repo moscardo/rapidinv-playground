@@ -983,8 +983,8 @@ if __name__ == '__main__':
         'DISPL.%(network)s.%(station)s.%(location)s.%(channel)s'
 
     fn_waveforms = op.join(output_dir, 'prepared',  fn_template1)
-    fn_stations = op.join(output_dir, 'prepared', 'stations.txt')
-    fn_event = op.join(output_dir, 'prepared', 'event.txt')
+    fn_stations = op.join(output_dir, 'stations.txt')
+    fn_event = op.join(output_dir, 'event.txt')
 
     nsl_to_station = {}
     for site in sites:
@@ -1046,6 +1046,7 @@ if __name__ == '__main__':
 
     rapidinp = '''
 INVERSION_DIR  %s
+STAT_INP_FILE  %s
 DATA_DIR       %s
 DATA_FILE      %s
 LATITUDE_NORTH %g
@@ -1059,6 +1060,7 @@ SEC              %s
 MSEC             %g
 ''' % ((
         op.join('result', eventname),
+        op.join('data', eventname, 'stations.txt'),
         op.join('data', eventname, 'prepared'),
         util.time_to_str(event.time, format='%Y-%m-%d_%H-%M-%S'),
         event.lat, event.lon) + tuple(dss) + (msec,))

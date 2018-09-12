@@ -1,0 +1,42 @@
+GFDB_STEP1       gfdb/regional_2s
+GFDB_STEP2       gfdb/regional_2s
+GFDB_STEP3       gfdb/regional_2s
+
+EPIC_DIST_MIN    100
+EPIC_DIST_MAX    2000
+EPIC_DIST_MAXLOC 2000
+EPIC_DIST_MAXKIN 250
+
+INVERSION_DIR  result/botswana
+DATA_DIR       data/botswana/prepared
+STAT_INP_FILE  data/botswana/stations.txt
+DATA_FILE      2017-04-03_17-40-17
+LATITUDE_NORTH -22.68
+LONGITUDE_EAST 25.23
+YEAR             2017
+MONTH            04
+DAY              03
+HOUR             17
+MIN              40
+SEC              17
+MSEC             0
+
+DEPTH_1          23
+DEPTH_2          23
+DEPTH_STEP       10
+
+SCAL_MOM_1       6.30957e+18
+SCAL_MOM_2       6.30957e+18
+
+SW_RAPIDSTEP1    True
+
+BP_F1_STEP1      0.018
+BP_F2_STEP1      0.020
+BP_F3_STEP1      0.040
+BP_F4_STEP1      0.045
+
+BP_F1_STEP2      0.018
+BP_F2_STEP2      0.020
+BP_F3_STEP2      0.040
+BP_F4_STEP2      0.045
+
