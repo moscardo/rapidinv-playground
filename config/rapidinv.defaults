@@ -1,7 +1,7 @@
 INVERSION_DIR    none
-GFDB_STEP1       gfdb/regional_2s
-GFDB_STEP2       gfdb/regional_2s
-GFDB_STEP3       gfdb/regional_2s
+GFDB_STEP1       gfdb/regional_2s_kiwi
+GFDB_STEP2       gfdb/regional_2s_kiwi
+GFDB_STEP3       gfdb/regional_2s_kiwi
 GF_INTERPOLATION bilinear
 DATA_DIR         none
 DATA_FILE        unknown_event

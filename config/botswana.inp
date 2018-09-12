@@ -1,12 +1,3 @@
-GFDB_STEP1       gfdb/regional_2s
-GFDB_STEP2       gfdb/regional_2s
-GFDB_STEP3       gfdb/regional_2s
-
-EPIC_DIST_MIN    100
-EPIC_DIST_MAX    2000
-EPIC_DIST_MAXLOC 2000
-EPIC_DIST_MAXKIN 250
-
 INVERSION_DIR  result/botswana
 DATA_DIR       data/botswana/prepared
 STAT_INP_FILE  data/botswana/stations.txt
@@ -20,6 +11,11 @@ HOUR             17
 MIN              40
 SEC              17
 MSEC             0
+
+EPIC_DIST_MIN    100
+EPIC_DIST_MAX    2000
+EPIC_DIST_MAXLOC 2000
+EPIC_DIST_MAXKIN 250
 
 DEPTH_1          23
 DEPTH_2          23
