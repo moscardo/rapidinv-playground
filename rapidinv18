@@ -742,14 +742,14 @@ def prepInvDir(inv_param):
     copyAllFiles(inv_param['DATA_DIR'],inv_param['INVERSION_DIR'])
 #   introduced after grondown dir structure, first time in rapidinv18
     srcname=os.path.join(inv_param['STAT_INP_FILE'])
-    dstname=os.path.join(inv_param['INVERSION_DIR'],inv_param['STAT_INP_FILE'])
+    dstname=os.path.join(inv_param['INVERSION_DIR'],'stations_rapidinv.txt')
     shutil.copy(srcname,dstname)
 #    print ('copied data from '+inv_param['DATA_DIR'])
 
 
 def prepStations(inv_param,traces):
     # Check range of distances
-    fstations=os.path.join(inv_param['INVERSION_DIR'],inv_param['STAT_INP_FILE'])
+    fstations=os.path.join(inv_param['INVERSION_DIR'],'stations_rapidinv.txt'])
     fstationsok=fstations+'.tmp'
     f = open(fstations,'r')
     f2 = open(fstationsok,'w')
@@ -805,7 +805,7 @@ def prepStations(inv_param,traces):
     f.close()
     nstatok=istatok+1
 
-    fstatinp=os.path.join(inv_param['INVERSION_DIR'],inv_param['STAT_INP_FILE'])
+    fstatinp=os.path.join(inv_param['INVERSION_DIR'],'stations_rapidinv.txt')
     fstatout=os.path.join(inv_param['INVERSION_DIR'],inv_param['STAT_OUT_FILE'])
     f = open(fstatinp,'r')
     f2 = open(fstatout,'w')
