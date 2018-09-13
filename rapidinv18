@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2.7
 #
 #     RAPIDINV.PY
 #
@@ -741,8 +741,8 @@ def prepInvDir(inv_param):
     os.mkdir(inv_param['INVERSION_DIR'])
     copyAllFiles(inv_param['DATA_DIR'],inv_param['INVERSION_DIR'])
 #   introduced after grondown dir structure, first time in rapidinv18
-    src=os.path.join(inv_param['STAT_INP_FILE'])
-    dst=os.path.join(inv_param['INVERSION_DIR'],inv_param['STAT_INP_FILE'])
+    srcname=os.path.join(inv_param['STAT_INP_FILE'])
+    dstname=os.path.join(inv_param['INVERSION_DIR'],inv_param['STAT_INP_FILE'])
     shutil.copy(srcname,dstname)
 #    print ('copied data from '+inv_param['DATA_DIR'])
 
